@@ -1,0 +1,203 @@
+# PlayerStatsBoard 配置文件
+# ScriptIrc-config-version: 2
+
+# 计分板设置
+scoreboard:
+  # 计分板标题
+  title: "&6&l玩家统计"
+  # 计分板更新间隔（秒）
+  update-interval: 2
+  # 是否自动为玩家显示计分板
+  auto-show: true
+
+# 统计项目设置
+stats:
+  # 死亡次数设置
+  deaths:
+    # 显示名称
+    display-name: "&c死亡次数"
+    # 死亡时增加的惩罚值
+    punishment-on-death: 1
+  
+  # 技能使用次数设置
+  skills:
+    # 显示名称
+    display-name: "&a技能使用"
+    # 每次使用增加的技能次数
+    increment-on-use: 1
+    # 技能冷却时间（秒）
+    cooldown: 5
+  
+  # 惩罚值设置
+  punishment:
+    # 显示名称
+    display-name: "&4惩罚值"
+    # 死亡时增加的惩罚值
+    increment-on-death: 1
+    # 最大惩罚值（0表示无限制）
+    max-punishment: 100
+
+# 消息设置
+messages:
+  # 计分板显示/隐藏消息
+  scoreboard-show: "&a计分板已显示"
+  scoreboard-hide: "&c计分板已隐藏"
+  # 数据重置消息
+  reset-success: "&a已重置玩家 %player% 的统计数据"
+  reset-all-success: "&a已重置所有玩家的统计数据"
+  # 错误消息
+  no-permission: "&c你没有权限执行此命令"
+  player-not-found: "&c找不到玩家 %player%"
+  # 帮助消息
+  help-header: "&6&lPlayerStatsBoard 命令帮助"
+  help-show: "&e/scoreboard show &7- 显示计分板"
+  help-hide: "&e/scoreboard hide &7- 隐藏计分板"
+  help-reset: "&e/scoreboard reset [玩家] &7- 重置玩家数据"
+  help-reload: "&e/scoreboard reload &7- 重载配置"
+  # 技能消息
+  skill-used: "&a你使用了技能%skill_id%"
+  skill-cooldown: "&c技能冷却中，剩余%time%秒"
+  skill-not-found: "&c这不是有效的技能物品"
+
+# 技能系统设置
+skills:
+  # 是否启用技能系统
+  enabled: true
+  # 技能列表
+  list:
+    # 技能1
+    skill1:
+      # 技能物品
+      item: "BOOK"
+      # 技能名称（显示用）
+      name: "技能1"
+      # 冷却时间（秒，0表示无冷却）
+      cooldown: 5
+      # 技能效果（预留接口）
+      effect: "none"
+    
+    # 技能2
+    skill2:
+      item: "ENCHANTED_BOOK"
+      name: "技能2"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能3
+    skill3:
+      item: "WRITABLE_BOOK"
+      name: "技能3"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能4
+    skill4:
+      item: "WRITTEN_BOOK"
+      name: "技能4"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能5
+    skill5:
+      item: "PAPER"
+      name: "技能5"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能6
+    skill6:
+      item: "MAP"
+      name: "技能6"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能7
+    skill7:
+      item: "FILLED_MAP"
+      name: "技能7"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能8
+    skill8:
+      item: "FEATHER"
+      name: "技能8"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能9
+    skill9:
+      item: "INK_SAC"
+      name: "技能9"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能10
+    skill10:
+      item: "GLOW_INK_SAC"
+      name: "技能10"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能11
+    skill11:
+      item: "BONE"
+      name: "技能11"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能12
+    skill12:
+      item: "BONE_MEAL"
+      name: "技能12"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能13
+    skill13:
+      item: "CLAY_BALL"
+      name: "技能13"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能14
+    skill14:
+      item: "SNOWBALL"
+      name: "技能14"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能15
+    skill15:
+      item: "EGG"
+      name: "技能15"
+      cooldown: 5
+      effect: "none"
+    
+    # 技能16
+    skill16:
+      item: "ENDER_PEARL"
+      name: "技能16"
+      cooldown: 10
+      effect: "none"
+    
+    # 技能17
+    skill17:
+      item: "EYE_OF_ENDER"
+      name: "技能17"
+      cooldown: 10
+      effect: "none"
+    
+    # 技能18
+    skill18:
+      item: "FIRE_CHARGE"
+      name: "技能18"
+      cooldown: 10
+      effect: "none"
+    
+    # 你可以继续添加更多技能
+    # skill19:
+    #   item: "ITEM_NAME"
+    #   name: "技能19"
+    #   cooldown: 5
+    #   effect: "none"

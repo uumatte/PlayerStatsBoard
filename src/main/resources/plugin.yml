@@ -1,0 +1,17 @@
+name: PlayerStatsBoard
+version: '1.0.0'
+main: io.Sriptirc_wp_1239.playerstatsboard.Playerstatsboard
+api-version: '1.16'
+authors: ['wp:1239']
+description: '玩家统计计分板插件 - 显示死亡次数、技能使用次数和惩罚值'
+commands:
+    scoreboard:
+        description: '玩家统计计分板主命令'
+        aliases: ['sb', 'stats']
+permissions:
+    playerstatsboard.use:
+        description: '使用计分板命令'
+        default: false
+    playerstatsboard.admin:
+        description: '管理员权限 - 重置玩家数据'
+        default: false
